@@ -1,67 +1,71 @@
 // 1
-for(var i=0; i<=10; i++)
+var int= prompt("Enter a positive integr: ")
+if(int>0){
+var int1= Number(int);
+alert("Number: " + int1);
+var int2= Math.round(int,1);
+alert("Round off: " + int2);
+var int3= Math.floor(int);
+alert("Floor: " + int3);
+var int4= Math.ceil(int);
+alert("Ceil: " + int4);
+}
 // 2
-for(var i=0; i<=12; i++)
+var inn= prompt("Enter a negative float point number: ")
+if(inn<0){
+var inn1= Number(inn);
+alert("Number: " + inn1);
+var inn2= Math.round(inn,1);
+alert("Round off: " + inn2);
+var inn3= Math.floor(inn);
+alert("Floor: " + inn3);
+var inn4= Math.ceil(inn);
+alert("Ceil: " + inn4);
+}
 // 3
-for(var i=0; i <= 4; i++)
+var ab= prompt("Enter a number: ")
+var ab1= Math.abs(ab)
+alert("Absolute value of number you entered is: " + ab1)
 // 4
-for(var c=0; c<100; c++){
-console.log(c);}
+var dice=Math.random();
+var num=(dice *6)+1;
+var sta= Math.floor(num);
+alert("Random value of dice is: " + sta)
 // 5
-for(i=3; i>0; i--){
-    console.log(i); 
+var dice1=Math.random();
+var num1=(dice1 *2)+1;
+var sta1= Math.floor(num1);
+if(sta1==1){
+    alert("Random coin value is: " + sta1 + " and it is Heads")
+}
+else if(sta1==2){
+    alert("Random coin value is: " + sta1 + " and it is  Tails")
 }
 // 6
-var arr=[10];
+var dice2=Math.random();
+var num2=(dice2 *100)+1;
+var sta2= Math.floor(num2);
+if(sta2>=1 && sta2<=100){
+    alert("Random number b/w 100 and 1 is: " + sta2 )
+}
 // 7
-var flag= true;
+var ask = prompt("Enter your weight (e.g., 50, 50kgs, 50.2kgs, 50.2kilograms): ")
+var weight = parseFloat(ask)
+if(weight==50 || weight==50.2){
+        alert("Your weight is: " + weight + " Kilograms" )
+}
+else {
+    alert("Invalid or different weight entered.");
+}
 // 8
-var pet=['dog','cat','horse','sparrow','parrot','peigon','chicken','eagle']
-for(i=0; i<pet.length; i++){
-    console.log(i);
+var guess = prompt("Enter a number b/w 1 to 10: ")
+var dice3 = Math.random();
+var num3 = (dice3 * 10) + 1;
+var sta3 = Math.floor(num3);
+alert("Random number is: " + sta3 )
+if (sta3 == guess) {
+    alert("Congratulations you guessed the correct number, Random number is: " + sta3 + "and you entered " + guess)
 }
-// 9
-for(var i=0; i<10; i++)
-{
-    if(i===1){
-        alert(i);
-        break;
-    }
-}
-// 10
-var fname= prompt("Enter first name: ")
-var username=['urooj','fatima','tehzeeb','hamza','wasi','hammad','dua','ramal'];
-for(i=0; i<username.length; i++){
-    if(username.includes(fname)){
-        alert("Enter")
-        break;
-    }
-else if(!username.includes(fname)){
-    alert("Please write correct username")
-    break;
-}
-}
-// 11
-var list=['urooj','fatima','tehzeeb','hamza','wasi','hammad','dua','ramal'];
-var userInput= prompt("Enter first name: ")
-var matchFound = false;
-for (var i = 0; i < list.length; i++) {
-if (userInput === list[i]) {
-alert("Match found");
-matchFound = true;
-break;
-}
-else if(userInput != list[i]) {
-    alert("Match isn't found");
-matchFound = false;
-break;
-}
-};
-// 12
-var firstArr = ['a', 'b', 'c', 'd', 'e', 'f'];
-var secondArr = [1, 2, 3, 4, 5, 6];
-for (var i = 0; i < firstArr.length; i++){
-    for (var n = 0; n < secondArr.length; n++){
-        document.write(firstArr[i]+secondArr[n] +"</br>")
-    }
+else {
+        alert("Invalid or different number entered.")
 }
