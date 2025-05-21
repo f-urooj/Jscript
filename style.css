@@ -1,0 +1,24 @@
+img {
+            width: 150px;
+            margin: 10px;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+img:hover {
+            border-color: #007bff;
+        }
+table {
+      border-collapse: collapse;
+      width: 50%;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: center;
+    }
+    button {
+      padding: 5px 10px;
+    }
+    

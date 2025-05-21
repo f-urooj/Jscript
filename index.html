@@ -4,13 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<a href="#" onclick="showAlert()">Click me</a>
+<h2>Click on a mobile image:</h2>
+
+<!-- Mobile Images -->
+<img src="./images/mob.avif" onclick="showAlert('Mobile 1')" />
+<img src="./images/mob.avif" onclick="showAlert('Mobile 2')" />
+<img src="./images/mob.avif" onclick="showAlert('Mobile 3')" />
+<!-- task 3 -->
+ <h3 style="text-align:center;">Student Table with Delete Option</h3>
+
+<table id="studentTable">
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th>Name</th>
+      <th>Class</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td></td><td>Jhone</td><td>10</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td></td><td>Doe</td><td>9</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td></td><td>Mark</td><td>10</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td></td><td>James</td><td>8</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+  </tbody>
+</table>
+<!-- tak 4 -->
+ <h2 style="text-align:center;">Hover over the image to change it</h2>
+<img id="myImage" src="images/mob.avif" alt="Image" />    
+
+
 </body>
 
 
-<script src="ch31-35.js"></script>
-<script src="ch35-38.js"></script>
-<script src="24p2.js"></script>
+<!-- <script src="ch38-42.js"></script> -->
+<script src="ch42-28.js"></script>
 </html>
